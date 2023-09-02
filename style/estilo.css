@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(26, 26, 26);
+  margin: 0;
+}
+
+.botones {
+  height: 100%;
+  padding: 50px 0 50px 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones button {
+  border-radius: 30px;
+  margin: 0px 50px 0px 50px;
+  background-color: rgb(55, 143, 55);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(158, 228, 255);
+  color: rgb(0, 0, 0);
+}
+
+.logoCalculadora {
+  margin: auto;
+  text-align: center;
+}
+
+.logoCalculadora img {
+  width: 65%;
+}
