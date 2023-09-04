@@ -39,6 +39,7 @@ function calculadora() {
     switch (operacion) {
       default:
         alert("La operación indicada es inválida.");
+        break;
 
       case "+":
         valor1 = parseInt(prompt("Ingresar primer valor:"));
@@ -77,7 +78,11 @@ function calculadora() {
 function tablas() {
   let tablasDe = parseInt(prompt(nombre + ", ¿qué tabla querés saber?"));
 
-  for (let i = 1; i <= 10; i++) {
-    alert(tablasDe + " multiplicado por " + i + " = " + tablasDe * i);
+  if (/^[0-9.,]+$/.test(tablasDe)) {
+    for (let i = 1; i <= 10; i++) {
+      alert(tablasDe + " multiplicado por " + i + " = " + tablasDe * i);
+    }
+  } else {
+    alert("El valor ingresado es inválido.");
   }
 }
